@@ -4,71 +4,98 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-</head>
-<body>
+
+
 <style>
-.watch {
 
-}
-.center {
-  width: 80px;
-  background-color: #2941c9;
-  left: cals;
-}
+a {
+            text-decoration: none;
+            color: brown;
 
+        }
 
-@keyframes time {
-  from{
-    transform: rotate(0);
+        button {
+            margin: 15px;
+        }
 
-  }
+        @keyframes time {
+            from {
+                transform: rotate(0);
+            }
 
-to {
-  transform: rotate(360);
-}
+            to {
+                transform: rotate(360deg);
+            }
+        }
 
-}
-.twelv {
-top: 10px;
-left: 50%;
-transform: translateX(-50%);
-}
-.three {
-  right: 10px;
-  top: 50%;
-  transform: translateX(-50%);
-}
+        .clock div {
+            position: absolute;
+        }
 
-.six {
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  
-}
+        .clock {
+            border: 3px black solid;
+            border-radius: 50%;
+            height: 200px;
+            width: 200px;
+            margin: 20px auto;
+            position: relative;
+        }
 
-.nine{
-  left: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-} 
-.one{
-  transform: rotate(30deg);
-  transform-origin: 0px 90px;
-}
+        .center {
+            height: 5px;
+            width: 5px;
+            background-color: black;
+            top: calc(50% - (5px/2));
+            left: calc(50% - (5px/2));
+            border-radius: 50%;
+        }
 
-.two{
-transform: rotate(57.5deg);
-transform-origin: 0px 90px;
+        .sec {
+            height: 80px;
+            width: 3px;
+            background-color: brown;
+            transform-origin: bottom center;
+            left: calc(50% - (3px/2));
+            top: 20px;
+            border-radius: 3px;
+            animation: time 60s steps(60) infinite;
+        }
 
-}
+        .min {
+            height: 60px;
+            width: 3px;
+            background-color: rgb(118, 29, 29);
+            transform-origin: bottom center;
+            left: calc(50% - (3px/2));
+            top: 40px;
+            border-radius: 3px;
+            animation: time 3600s linear infinite;
+        }
+
+        .ho {
+            height: 40px;
+            width: 3px;
+            background-color: rgb(73, 21, 21);
+            transform-origin: bottom center;
+            left: calc(50% - (3px/2));
+            top: 60px;
+            border-radius: 3px;
+            animation: time 86400s linear infinite;
+        }
+
+        
+
+       
 </style>
-<div class="watch"> </div>
-<div class="seconds"> </div>
-<div class="minutes"></div>
-<div class="hours"></div>
+<head>
+  <body>
+
+<div class="clock"> 
+<div class="sec"> </div>
+<div class="min"></div>
+<div class="ho"></div>
 <div class="center"></div>
+</div>
 
-
-  
 </body>
 </html>
