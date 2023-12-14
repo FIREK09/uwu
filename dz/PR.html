@@ -5,11 +5,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
-    dl::before {
-      content: ">";
-      padding-right: 5px;
-      font-weight: bolder;
-    }
+   dl::before {
+        content: ">";
+        padding-right: 3px;
+        font-weight: bolder;
+       }
+
+       .Winter::before {
+        content: url(../photo/winter_16.png);
+       }
+
+       .Spring::before {
+        content: url(../photo/spring_16.png)
+       }
+
+       .Summer::before {
+        content: url(../photo/summer_16.png)
+       }
+
+       .Autumn::before {
+        content: url(../photo/autumn_16.png)
+       }
+
+
+       a {
+            text-decoration: none;
+            color: brown;
+
+        }
+
+        button {
+            margin: 15px;
+        }
+
+      
+
 </style>
 </head>
 <body>
@@ -18,7 +48,7 @@
  <dd class="Winter">December</dd>
  <dd class="Winter">January</dd>
  <dd class="Winter">February</dd>
- <dl>Spring</dl>
+ <dl>"Spring"</dl>
  <dd class="Spring">March</dd>
  <dd class="Spring">April</dd>
   <dd class="Spring">May</dd>
@@ -27,10 +57,10 @@
 <dd class="Summer">July</dd>
 <dd class="Summer">August</dd>
 <dl>Autumm</dl>
-<dd class="Autumm">September</dd>
-<dd class="Autumm">October</dd>
-<dd class="Autumm">November</dd>
-<dsdwd
+<dd class="Autumn">September</dd>
+<dd class="Autumn">October</dd>
+<dd class="Autumn">November</dd>
+
 
 </body>
 </html>
