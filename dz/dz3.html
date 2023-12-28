@@ -1,18 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <style>
+    .CatGalery {
+      border: 1px solid rgb(210, 208, 208);
+      width: 512;
+      margin: 50px auto;
+    }
+
+    .CatGalery a:hover {
+      background-color: transparent;
+    }
+
+    .CatGalery a {
+      display: inline-block;
+      padding: 0;
+      border-radius: 0px;
+      margin-bottom: 0px;
+      text-decoration: none;
+      padding: 10px;
+      height: 70px;
+      color: black;
+      border: 1px solid rgb(210, 208, 208);
+      background-color: transparent;
+      border-left: none;
+      border-bottom: none;
+    }
+  </style>
 </head>
 
 <body>
-  <div>
-<h1 style="text-align: center;">Cats Galery</h1>
+  <div class="CatGalery">
+    <h1 style="text-align: center;">Cats Galery</h1>
+    <hr style="border-color: #ffffff;" />
 
+    
+  <iframe
+    width="256"
+    height="256"
+    src="KOTIK/cat_tied_256.png"
+    name="bigCat"
+    style="border: none; display: block; width: 256px; margin: 10px auto"
+  ></iframe>
 
-
+  <div style="display: flex; justify-content: center">
+    <a href="KOTIK/cat_tied_256.png" target="bigCat"
+      ><img width="64" src="KOTIK/cat_tied_64.png" alt=""
+    /></a>
+    <a href="KOTIK/cat_purr_256.png" target="bigCat"
+      ><img width="64" src="KOTIK/cat_purr_64.png" alt=""
+    /></a>
+    <a href="KOTIK/cat_eyes_256.png" target="bigCat"
+      ><img width="64" src="KOTIK/cat_eyes_64.png" alt=""
+    /></a>
+    <a href="KOTIK/cat_clean_256.png" target="bigCat"
+      ><img width="64" src="KOTIK/cat_clean_64.png" alt=""
+    /></a>
+    <a href="KOTIK/cat_cage_256.png" target="bigCat"
+      ><img width="64" src="KOTIK/cat_cage_64.png" alt=""
+    /></a>
+    <a
+      href=KOTIK/cat_box_256.png"
+      style="border-right: none"
+      target="bigCat"
+      ><img width="64" src="KOTIK/cat_box_64.png" alt=""
+    /></a>
   </div>
-  
+</div>
+
 </body>
+
 </html>
